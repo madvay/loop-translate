@@ -20,30 +20,44 @@ Thus the default execution is equivalent to arguments of `en fr de ja es`.
 ### Example
 
 ```sh
-| => yarn start
+| => yarn start en hi he ko th yua zh-Hant ja
 yarn run v1.6.0
-$ node cli.js
-You have qualified for a free timeshare in Florida! Please come to our eye-popping presentation next Wednesday at 7am where we will provide you with free donut holes while you listen to us convince you that $10000 a month is cheap for an underwater cabin you will never use.
+$ node cli.js en hi he ko th yua zh-Hant ja
+Please do not step on the grass. No dogs allowed.
 ⟨+AA⟩ Translations provided by Microsoft Translator
-⟨en⟩ You have qualified for a free timeshare in Florida! Please come to our eye-popping presentation next Wednesday at 7am where we will provide you with free donut holes while you listen to us convince you that $10000 a month is cheap for an underwater cabin you will never use.
+⟨en⟩ Please do not step on the grass. No dogs allowed.
 
-⟨fr⟩ Vous avez qualifié pour une multipropriété libre en Floride! S'il vous plaît venir à notre présentation eye-popping mercredi prochain à 7H, où nous allons vous fournir des trous de beignet gratuit pendant que vous nous écoutez vous convaincre que $10000 par mois est bon marché pour une cabine sous-marine que vous n'utiliserez jamais.
+⟨hi⟩ कृपया घास पर कदम नहीं है । कोई कुत्तों की अनुमति दी ।
 
-⟨*en⟩ You have qualified for a free timeshare in Florida! Please come to our eye-popping presentation next Wednesday at 7am, where we will provide you with free donut holes while you listen to us convince you that $10000 per month is cheap for an underwater cabin that you will only use Never.
+⟨*en⟩ Please don't step on the grass. No dogs allowed.
 
-⟨de⟩ Sie haben sich für einen kostenlosen Timeshare in Florida qualifiziert! Bitte kommen Sie zu unserem Eye-knallen Präsentation nächsten Mittwoch um 7 Uhr, wo wir Sie mit kostenlosen Donut Löcher bieten, während Sie uns zu überzeugen, dass $10000 pro Monat ist billig für eine Unterwasser Kabine, die Sie nur verwenden Nie.
+⟨he⟩ . בבקשה אל תדרוך על הדשא . אין כניסה לכלבים
 
-⟨*en⟩ You have qualified for a free timeshare in Florida! Please come to our eye-popping presentation next Wednesday at 7am, where we will provide you with free donut holes while you convince us that $10000 per month is cheap for an underwater cabin that you will only never use.
+⟨*en⟩ . Please don't step on the lawn. No dogs allowed.
 
-⟨ja⟩ フロリダの自由な時分割のために修飾した!してください私たちの目を見張るようなプレゼンテーションを次の水曜日午前7時、ここで私たちを説得しながら、無料のドーナツの穴を提供する $1万1ヶ月あたりの安価な水中キャビンの場合にのみ使用することはありません。
+⟨ko⟩ . 제발 잔디밭에 단계를 하지 않습니다. 아니 개 들 허용.
 
-⟨*en⟩ You've qualified for a free timeshare in Florida! Please give us an eye-popping presentation next Wednesday at 7:00 a.m., here's a free donut hole while convincing US $
-10001 is not to be used only in the case of cheap underwater cabins per month.
-⟨es⟩ ¡ Usted ha calificado para un tiempo compartido libre en la Florida! por favor, danos una presentación con los ojos el próximo miércoles a las 7:00 a.m., aquí hay un agujero de Donut gratis mientras convence US $
-10001 no debe ser utilizado solamente en el caso de cabinas subacuáticas baratas por mes.
-⟨*en⟩ You have qualified for a free share time in Florida! Please give us a presentation with your eyes next Wednesday at 7:00 a.m., here is a free Donut hole while convincing US $10001 should not be used only in the case of cheap underwater cabins per month.
-⟨+XX⟩ Characters used: 2143
-✨  Done in 84.43s.
+⟨*en⟩ . Please do not step on the lawn. No dogs allowed.
+
+⟨th⟩ . กรุณาอย่าก้าวบนสนามหญ้า ไม่อนุญาตให้ใช้สุนัข
+
+⟨*en⟩ Please do not progress on the lawn. Dogs are not allowed.
+
+⟨yua⟩ Much ma' progresar ti' le césped. Ma' u permiten peek'.
+
+⟨*en⟩ Return not to progress on the lawn. No dogs allowed.
+
+⟨zh-Hant⟩ 返回不在草坪上的進展。不允許狗。
+
+⟨*en⟩ Return not on the lawn on the progress.
+Dogs are not allowed.
+⟨ja⟩ 進行中の芝生の上に戻ります。 犬は不可。
+
+⟨*en⟩ Go back on the grass in progress.
+Dogs are not allowed.
+⟨+XX⟩ Characters used: 575
+✨  Done in 16.23s.
+
 ```
 
 ### License
