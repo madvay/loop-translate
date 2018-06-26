@@ -1,4 +1,4 @@
-## tloop
+## loop-translate
 
 Translates something repeatedly.  Currently uses Microsoft's translation API - and you'll need your own API key, which you can put in a file named `.subkey.txt` along side this package.
 
@@ -6,7 +6,7 @@ If you don't want the default list of languages, add all the languages you want 
 
 Also available as a library with function `showTranslateSequence(text, from, toLangs)`.
 
-````sh
+```sh
 | => yarn start
 yarn run v1.6.0
 $ node cli.js
@@ -31,4 +31,25 @@ How would you like us to process your refund this year? We can send you a check 
 
 ⟨XX⟩ Characters used: 1127
 ✨  Done in 4.85s.
-````
+```
+
+### License
+
+```
+Copyright (c) 2018 Advay Mengle - https://github.com/madvay/loop-translate
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
+associated documentation files (the "Software"), to deal in the Software without restriction,
+including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense,
+and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so,
+subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial
+portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT
+NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+```
