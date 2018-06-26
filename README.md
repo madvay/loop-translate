@@ -10,27 +10,27 @@ Also available as a library with function `showTranslateSequence(text, from, toL
 | => yarn start
 yarn run v1.6.0
 $ node cli.js
-How would you like us to process your refund this year? We can send you a check or we can transmit the funds via direct deposit to your bank.
-⟨en⟩ How would you like us to process your refund this year? We can send you a check or we can transmit the funds via direct deposit to your bank.
+You have qualified for a free timeshare in Florida! Please come to our eye-popping presentation next Wednesday at 7am where we will provide you with free donut holes while you listen to us convince you that $10000 a month is cheap for an underwater cabin you will never use.
+⟨+AA⟩ Translations provided by Microsoft Translator
+⟨en⟩ You have qualified for a free timeshare in Florida! Please come to our eye-popping presentation next Wednesday at 7am where we will provide you with free donut holes while you listen to us convince you that $10000 a month is cheap for an underwater cabin you will never use.
 
-⟨fr⟩ Comment voulez-vous que nous traitions votre remboursement cette année? Nous pouvons vous envoyer un chèque ou nous pouvons transmettre les fonds via le dépôt direct à votre banque.
+⟨fr⟩ Vous avez qualifié pour une multipropriété libre en Floride! S'il vous plaît venir à notre présentation eye-popping mercredi prochain à 7H, où nous allons vous fournir des trous de beignet gratuit pendant que vous nous écoutez vous convaincre que $10000 par mois est bon marché pour une cabine sous-marine que vous n'utiliserez jamais.
 
-⟨*en⟩ How do you want us to treat your rebate this year? We can send you a cheque or we can forward the funds via direct deposit to your bank.
+⟨*en⟩ You have qualified for a free timeshare in Florida! Please come to our eye-popping presentation next Wednesday at 7am, where we will provide you with free donut holes while you listen to us convince you that $10000 per month is cheap for an underwater cabin that you will only use Never.
 
-⟨de⟩ Wie sollen wir Ihren Rabatt in diesem Jahr behandeln? Wir können Ihnen einen Scheck schicken, oder wir können die Mittel über Direkteinzahlung an Ihre Bank weiterleiten.
+⟨de⟩ Sie haben sich für einen kostenlosen Timeshare in Florida qualifiziert! Bitte kommen Sie zu unserem Eye-knallen Präsentation nächsten Mittwoch um 7 Uhr, wo wir Sie mit kostenlosen Donut Löcher bieten, während Sie uns zu überzeugen, dass $10000 pro Monat ist billig für eine Unterwasser Kabine, die Sie nur verwenden Nie.
 
-⟨*en⟩ How should we treat your discount this year? We can send you a cheque, or we can forward the funds to your bank via direct deposit.
+⟨*en⟩ You have qualified for a free timeshare in Florida! Please come to our eye-popping presentation next Wednesday at 7am, where we will provide you with free donut holes while you convince us that $10000 per month is cheap for an underwater cabin that you will only never use.
 
-⟨ja⟩ 今年の割引はどのように扱われますか?我々はあなたに小切手を送ることができる、または我々は直接預金を介してあなたの銀行に資金を転送することができます。
+⟨ja⟩ フロリダの自由な時分割のために修飾した!してください私たちの目を見張るようなプレゼンテーションを次の水曜日午前7時、ここで私たちを説得しながら、無料のドーナツの穴を提供する $1万1ヶ月あたりの安価な水中キャビンの場合にのみ使用することはありません。
 
-⟨*en⟩ How is this year's discount handled? We can send you a check, or we can transfer funds to your bank via direct deposit.
-
-⟨es⟩ ¿Cómo se maneja el descuento de este año? podemos enviarle un cheque, o podemos transferir fondos a su banco vía depósito directo.
-
-⟨*en⟩ How is this year's discount handled? We can send you a check, or we can transfer funds to your bank via direct deposit.
-
-⟨XX⟩ Characters used: 1127
-✨  Done in 4.85s.
+⟨*en⟩ You've qualified for a free timeshare in Florida! Please give us an eye-popping presentation next Wednesday at 7:00 a.m., here's a free donut hole while convincing US $
+10001 is not to be used only in the case of cheap underwater cabins per month.
+⟨es⟩ ¡ Usted ha calificado para un tiempo compartido libre en la Florida! por favor, danos una presentación con los ojos el próximo miércoles a las 7:00 a.m., aquí hay un agujero de Donut gratis mientras convence US $
+10001 no debe ser utilizado solamente en el caso de cabinas subacuáticas baratas por mes.
+⟨*en⟩ You have qualified for a free share time in Florida! Please give us a presentation with your eyes next Wednesday at 7:00 a.m., here is a free Donut hole while convincing US $10001 should not be used only in the case of cheap underwater cabins per month.
+⟨+XX⟩ Characters used: 2143
+✨  Done in 84.43s.
 ```
 
 ### License
