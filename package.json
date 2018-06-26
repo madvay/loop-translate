@@ -1,0 +1,23 @@
+{
+  "name": "tloop",
+  "version": "1.0.1",
+  "description": "Loop translations for fun",
+  "main": "index.js",
+  "repository": "https://github.com/madvay/tloop.git",
+  "author": "Advay Mengle <source@madvay.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "start": "node cli.js"
+  },
+  "bin": {
+    "tloop": "cli.js"
+  },
+  "dependencies": {
+    "deepmerge": "^2.1.1",
+    "request": "^2.87.0",
+    "request-promise": "^4.2.2",
+    "uuid": "^3.2.1"
+  },
+  "devDependencies": {}
+}
