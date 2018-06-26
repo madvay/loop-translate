@@ -1,9 +1,9 @@
 {
-  "name": "tloop",
-  "version": "1.1.0",
+  "name": "loop-translate",
+  "version": "1.0.1",
   "description": "Loop translations for fun",
   "main": "index.js",
-  "repository": "https://github.com/madvay/tloop.git",
+  "repository": "https://github.com/madvay/loop-translate.git",
   "author": "Advay Mengle <source@madvay.com>",
   "license": "MIT",
   "private": false,
