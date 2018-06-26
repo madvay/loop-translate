@@ -22,17 +22,14 @@ const fs = require('fs');
 const uuidv4 = require('uuid/v4');
 const merge = require('deepmerge');
 
-// Put your API key in this file, on one line (no newlines!)
-const azureApiKey = fs.readFileSync('.subkey.txt', 'utf8');
-
 const azureApiUrl = 'https://api.cognitive.microsofttranslator.com/translate?api-version=3.0';
 
-const azureRequestOptions = function() {
+const azureRequestOptions = function(key) {
   return {
     method: 'POST',
     uri: azureApiUrl,
     headers : {
-      'Ocp-Apim-Subscription-Key' : azureApiKey,
+      'Ocp-Apim-Subscription-Key' : key,
       'X-ClientTraceId' : uuidv4(),
     },
     json: true
@@ -43,8 +40,8 @@ const azureCounters = {
   inputChars: 0
 };
 
-const azureTranslate = function(text, from, toLangs) {
-  const options = merge(azureRequestOptions(), {
+const azureTranslate = function(key, text, from, toLangs) {
+  const options = merge(azureRequestOptions(key), {
     qs: {
       to: toLangs,
       from: from
@@ -67,20 +64,20 @@ const logText = function(src, text) {
   console.log('⟨%s⟩ %s', src, text);
 };
 
-const translateSeq = function(text, from, toLangs, alsoShow) {
+const translateSeq = function(key, text, from, toLangs, alsoShow) {
   if (toLangs.length > 0) {
     const next = toLangs.shift();
-    translate(text, from, [next]).then(function (body) {
+    translate(key, text, from, [next]).then(function (body) {
       const out = body[0].translations[0].text;
       logText(next, out);
       if (alsoShow && alsoShow !== next) {
-        translate(out, next, alsoShow).then(function (body) {
+        translate(key, out, next, alsoShow).then(function (body) {
           const out2 = body[0].translations[0].text;
           logText('*' + alsoShow, out2);
-          translateSeq(out, next, toLangs, alsoShow);
+          translateSeq(key, out, next, toLangs, alsoShow);
         });
       } else {
-        translateSeq(out, next, toLangs, alsoShow);
+        translateSeq(key, out, next, toLangs, alsoShow);
       }
     }).catch(function (err) {
       console.error('Failure: ', err.message);
@@ -90,10 +87,10 @@ const translateSeq = function(text, from, toLangs, alsoShow) {
   }
 }
 
-const showTranslateSequence = function (text, from, toLangs) {
+const showTranslateSequence = function (key, text, from, toLangs) {
   logText('+AA', 'Translations provided by ' + attribution);
   logText(from, text);
-  translateSeq(text, from, toLangs, 'en');
+  translateSeq(key, text, from, toLangs, 'en');
 };
 
 module.exports = {
