@@ -30,8 +30,11 @@ if (args && args.length > 0) {
 }
 const text = fs.readFileSync("/dev/stdin", "utf-8");
 
+let azureApiKey = process.env.TRANSLATION_API_KEY;
+if (!azureApiKey) {
+  // Put your API key in this file, on one line (no newlines!)
+  azureApiKey = fs.readFileSync('.subkey.txt', 'utf8');  
+}
 
-// Put your API key in this file, on one line (no newlines!)
-const azureApiKey = fs.readFileSync('.subkey.txt', 'utf8');
 
 pkg.showTranslateSequence(azureApiKey, text, from, toLangs);

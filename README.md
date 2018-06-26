@@ -1,10 +1,23 @@
 ## loop-translate
 
-Translates something repeatedly.  Currently uses Microsoft's translation API - and you'll need your own API key, which you can put in a file named `.subkey.txt` along side this package.
+Translates something repeatedly.  Currently uses Microsoft's translation API - and you'll need your own API key.
 
 If you don't want the default list of languages, add all the languages you want to translate as command line arguments.
 
-Also available as a library with function `showTranslateSequence(text, from, toLangs)`.
+Also available as a library with function `showTranslateSequence(apiKey, text, from, toLangs)`.
+
+### Usage
+
+Text to translate is in stdin.  The API key is in environment variable TRANSLATION_API_KEY, or otherwise in file `./.subkey.txt`.
+If no arguments are provided, the input text is assumed to be in `en` and the output sequence is `fr de ja es` (and back to `en`).
+Thus the default execution is equivalent to arguments of `en fr de ja es`.
+
+```
+# With the API key in .subkey.txt
+./cli.js
+```
+
+### Example
 
 ```sh
 | => yarn start
