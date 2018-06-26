@@ -1,6 +1,6 @@
 {
   "name": "loop-translate",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Loop translations for fun",
   "main": "index.js",
   "repository": "https://github.com/madvay/loop-translate.git",
